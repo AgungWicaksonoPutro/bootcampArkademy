@@ -25,5 +25,10 @@ let skills = [{
 
 let interestInCoding = true;
 
+console.log(name);
+console.log(age);
+console.log(hobbies);
+console.log(isMarried);
+console.log(schoolList);
 console.log(skills[0]);
 console.log(interestInCoding);

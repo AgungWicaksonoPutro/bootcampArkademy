@@ -8,4 +8,4 @@ for (let i = n; i >= 1; i--){
       s += '\n'
   }
 
-  console.log(s);
+console.log(s);

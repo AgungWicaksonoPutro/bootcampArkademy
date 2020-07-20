@@ -29,4 +29,4 @@ newData.hobby = ["Traveling", "Food Hunter","Futsal"]
 console.log(newData);
 
 let {street, city} = data.address;
-console.log(street, city);
+console.log(`${street} ${city}`);
