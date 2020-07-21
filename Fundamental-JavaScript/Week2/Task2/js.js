@@ -9,7 +9,7 @@ const name = [
 */
 
 const searchName = (word, limit, callback) => {
-    if (typeof (word) == "string" && typeof (limit) == "number" && typeof (callback) == "function") {
+    if (typeof (word) == "string"  && typeof (limit) == "number" && typeof (callback) == "function") {
         const name = [
             'Abigail','Alexandra','Alison',
             'Amanda','Angela','Bella',
@@ -22,9 +22,15 @@ const searchName = (word, limit, callback) => {
         }).filter((a)=>{
             return a.indexOf(word.toLowerCase()) > -1;
         })
-        callback(transformTxt, limit);
+        if (transformTxt.length != 0){
+            callback(transformTxt, limit);
+        } else {
+            console.log(`Keyword "${word}" tidak ada`)
+        }
+        
     } else {
-        console.log("Masukan Semua Parameter")
+        console.log(`Pastikan semua parameter terisi dan format benar, example: (string, number, function)
+        anda memasukan (${typeof word}, ${typeof limit}, ${typeof callback})`)
     }
 }
 const limitName = (arr, limit) =>{
@@ -34,4 +40,4 @@ const limitName = (arr, limit) =>{
     
 
 
-searchName('an', 3, limitName)
+searchName("", 3, limitName)
