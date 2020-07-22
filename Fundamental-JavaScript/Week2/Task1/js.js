@@ -24,15 +24,15 @@ Method filter() adalah method yang digunakan untuk mempermudah kita ketika ingin
 
 let nama = "Agung Wicaksono Putro"
 //1. slice()
-let namaSlice = nama.slice(0,-5);
+let namaSlice = nama.slice(0,-16);
 console.log(namaSlice);
 
 //2. substring()
-let namaSubString = nama.substring(0,5);
+let namaSubString = nama.substring(6, 15);
 console.log(namaSubString);
 
 //3. substr()
-let namaSubstr = nama.substr(6, 9);
+let namaSubstr = nama.substr(-5, 5);
 console.log(namaSubstr);
 
 //4. toUpperCase()
@@ -44,7 +44,7 @@ let hurufKecil = nama.toLocaleLowerCase();
 console.log(hurufKecil);
 
 //6. split()
-let str = nama.split("");
+let str = nama.split(" ");
 console.log(str);
 
 //7. match()

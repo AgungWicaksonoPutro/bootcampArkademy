@@ -9,15 +9,13 @@ const searchDataArray = (nilaiAwal, nilaiAkhir, arr) => {
         nilai awal yang anda masukan ${nilaiAwal} sedangkan nilai akhir ${nilaiAkhir}
         dan jumlah array yang anda inputkan ${arr.length}`)
     }
-    const selectingData = arr.map((item) => {
-            return value = item++;
-        }).filter((a)=>{
+    const selectingData = arr.filter((a)=>{
             return (a > nilaiAwal && a < nilaiAkhir)
     })
 
     if(selectingData.length != 0){
         const sortData = () => {
-            return selectingData.sort()
+            return selectingData.sort((a,b) => a -b)
         }
         console.log(sortData())
     } else {
@@ -25,7 +23,9 @@ const searchDataArray = (nilaiAwal, nilaiAkhir, arr) => {
     }
 }
 
-searchDataArray(1,15,[12,1,11,14,23,19,30])
+searchDataArray(5, 20 , [2, 25, 4, 14, 17, 30, 8])
+searchDataArray(15, 3 , [2, 25, 4, 14, 17, 30, 8])
+searchDataArray(5, 17 , [2, 25, 4])
   
   
 
