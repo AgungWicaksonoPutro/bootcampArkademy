@@ -47,4 +47,4 @@ const cookingBakmi = (menu,qnt) => {
     })
 }
 
-cookingBakmi('kwetiau', 2)
+cookingBakmi('kwetiau', 6)
